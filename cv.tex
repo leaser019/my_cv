@@ -1,0 +1,247 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % Set main font to Roboto
+% \setmainfont{Roboto}[
+%   Path = /path/to/fonts/,  % Provide the correct path to your font files
+%   Extension = .ttf,
+%   UprightFont = *-Regular,
+%   BoldFont = *-Bold,
+%   ItalicFont = *-Italic,
+%   BoldItalicFont = *-BoldItalic,
+% ]
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{parskip} 
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=magenta]{hyperref}
+
+% Customize section titles
+\titleformat{\section}{\Large\bfseries\sffamily}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{\, Vo Minh Khang} \\[6.5pt]
+    \begin{itemize}
+     \centering {\small{Front-end Developer}}\\[5.5pt]   
+    \end{itemize}
+\href{https://github.com/leaser019}{\raisebox{-0.05\height}\faGithub\ leaser019} \ $|$ \ 
+\href{https://www.linkedin.com/in/vominhkhang/}{\raisebox{-0.05\height}\faLinkedin\ Võ Minh Khang} \ $|$ \ 
+\href{https://vominhkhang.vercel.app/}{\raisebox{-0.05\height}\faGlobe \ My Portfolio} \ $|$ \ 
+\href{mailto:vomkhang35@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ vomkhang35@gmail.com} \ $|$ \ 
+\href{tel:0888032465}{\raisebox{-0.05\height}\faMobile \ 0888032465} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+I am a final year computer science student with \textbf{8 months of experience as a full-stack developer at AIoT Lab VN}, specializing in \textbf{ReactJS, JavaScript, ExpressJS, and MongoDB}. Proficient in building web applications, I am eager to take advantage of my experience to drive innovative projects.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2021 - Present & \hfill \normalsize Bachelor of Computer Science at \textbf{International University - VNU} 
+\end{tabularx}
+\normalsize {\textbf{Relevant Coursework:} Data Structure and Algorithms, Object-Oriented Analysis and Design, Digital Logic Design, Software Engineering, Computer Networks, Principles of Programming Languages, etc.}
+
+
+%Experience
+\section{Work Experience}
+\begin{longtable}{@{}p{0.4\linewidth}@{}p{0.6\linewidth}@{}}
+
+\textbf{UNIT Technology Corporation}  \\[0.25pt]
+ Jul 2024 -- Sep 2024 \\[3.75pt]
+\multicolumn{2}{@{}p{\linewidth}@{}}{As a \textbf{Frontend Developer Intern at UNIT}, I gained valuable experience working on internal company projects, enhancing my skills in \textbf{ MUI, React Hook Form, and Redux}. This role provided hands-on learning in modern front-end technologies and allowed me to apply them effectively in real-world scenarios.} \\ [5pt]
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+  \textbf{Responsibilities:}
+  \begin{itemize}[left=1em]
+    \item Developed and maintained intuitive user interfaces using \textbf{ReactJS, MUI, React Hook Form} ensuring seamless user experiences and adherence to design specifications.
+    \item Collaborated with cross-functional teams to debug front-end issues and optimize website performance.
+  \end{itemize}
+} \\ [5pt]
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+  \textbf{Projects:}
+  \begin{itemize}[left=1em]
+    \item \textbf{5PM Internal Project:} An internal web application designed for managing employee attendance and time-tracking for UNIT Technology Corporation, streamlining check-in/check-out processes and enhancing workforce management efficiency. \newline
+        \hspace*{0.6em} \textbf{Technologies:} ReactJS, PostgresSQL, .NET. \newline
+        \hspace*{0.6em} \textbf{Responsibilities:}
+            \begin{itemize}
+                 \item Implemented a web-based product introduction page using ReactJS, MUI incorporating responsive design and interactive UI components to effectively communicate the application's features and benefits to internal stakeholders.                           \item Developed features within the HR modules and optimized state management and API integration.
+            \end{itemize}
+          \hspace*{0.6em} \textbf{Website Showcase:}                      \href{https://unit.com.vn/checkinpro/}{\raisebox{-0.05\height}\faGlobe \ CheckinPro} 
+  \end{itemize}
+} \\
+
+\textbf{AIoT Lab VN, HCMIU} \\[0.25pt]
+Sept 2023 -- Present \\ [3.75pt]
+\multicolumn{2}{@{}p{\linewidth}@{}}{As a full-stack developer of AIoT Lab VN, I’ve gained hands-on experience in IT projects, strengthening my skills in web development, IoT, problem-solving, and teamwork, preparing me for future challenges.} \\ [5pt]
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+  \textbf{Responsibilities:}
+  \begin{itemize}[left=1em]
+    \item Conducted scientific research and developed AI-based solutions for image retrieval and activity recognition, ensuring high accuracy and efficiency in processing real-world data.
+    \item Collaborated on full-stack web application development to support research goals.
+  \end{itemize}
+} 
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+          \item \textbf{Projects:}
+            \begin{itemize}
+                \item \textbf{EVALLOS} - Evaluation and Quality Assurance in Higher Education \newline
+               Evallos is a full-stack application developed for Nguyen Tat Thanh University to manage educational program structures, training program lists, and Course/Program Learning Outcomes (CLOs/PLOs). It features a responsive interface that streamlines administrative processes and supports lecturers in generating course input reports with simplified calculations, enhancing educational quality assurance.\newline
+                    \hspace*{0.6em} \textbf{Duration:} Octorber 2024 - May 2025
+                    \newline
+                    \hspace*{0.6em} \textbf{Technologies:}
+                    ReactJS, ExpressJS, MongoDB.
+                    \newline
+                    \hspace*{0.6em} \textbf{Responsibilities:}
+                      \begin{itemize}
+                 \item Designed and developed a responsive UI with \textbf{ReactJS} and backend with \textbf{ExpressJS} and \textbf{MongoDB}, improving user interaction through efficient rendering and scalable CRUD operations.
+                 \item Optimized frontend performance for faster load times and backend efficiency for reduced API response times, enhancing overall system scalability.
+            \end{itemize}                
+        \end{itemize}
+        \hspace*{0.6em} \textbf{Website Showcase:}                      \href{https://evallos.aiotlab.vn/}
+        {\raisebox{-0.05\height}\faGlobe \ Evallos}
+} \\
+\end{longtable}
+
+%Projects
+\section{Personal Projects}
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{DOTKEPLER APPLICATION} & \hfill September 2024 - December 2024 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{tab}
+    \item \textbf{Description:} An application that streamlines project management and boosts team collaboration with efficient task tracking and real-time communication.
+\end{tab}
+\begin{tab}
+    \item \textbf{Technologies:} ReactJS, RTK Query, ExpressJS, MongoDB, Redis.
+\end{tab}
+\begin{tab}
+    \item \textbf{Responsibilities: }
+    \begin{itemize}
+        \item Developed and maintained a responsive web application using ReactJS, leveraging HTML, CSS, and JavaScript to deliver intuitive and high-performance user interfaces.
+        \item Designed user-friendly UI/UX prototypes in Figma, ensuring seamless alignment with project requirements and stakeholder expectations.
+        \item Implemented global state management using Redux Toolkit, optimizing data flow and enhancing application scalability and maintainability.
+        \item Optimized application performance through efficient data caching with \textbf{RTK Query}, reducing redundant requests and improving response times.
+    \end{itemize}
+    
+\end{tab}
+\begin{tab}
+    \item \textbf{Repositories:} 
+    \href{https://github.com/leaser019/Task-Tracking-Application}{\raisebox{-0.05\height}\faGithub\ DotKepler Client - Frontend} | \href{https://github.com/Khanhhungtran23/.Kepler-Task-Tracking-App-Server}{\raisebox{-0.05\height}\faGithub\ DotKepler Server - Backend}
+\end{tab}
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{GIFT SHOP MOBLIE APP} & \hfill September 2024 - May 2025 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{tab}
+    \item \textbf{Description:} The project introduces modern technologies like MongoDB and Express.js and demonstrates effective mobile app development with React Native. It also emphasizes the importance of collaboration within a large team, a crucial skill in software development.
+\end{tab}
+\begin{tab}
+    \item \textbf{Technologies:} Javascript, React Native, NodeJS, ExpressJS, MongoDB.
+\end{tab}
+\begin{tab}
+    \item \textbf{Responsibilities:} 
+    \begin{itemize}
+        \item Developed and maintained backend services using Node.js and ExpressJS, implementing robust CRUD operations for MongoDB to ensure efficient data management.
+        \item Designed and implemented RESTful APIs, enabling seamless communication between the React Native frontend and MongoDB backend, with a focus on data integrity and security.
+        \item Wrote and executed comprehensive test cases, including unit and integration tests, to validate backend functions and APIs, achieving high reliability and application stability.
+    \end{itemize}
+\end{tab}
+\begin{tab}
+\item \textbf{Repositories:} 
+\href{https://github.com/leaser019/Task-Tracking-Application}{\raisebox{-0.05\height}\faGithub\ Gift Shop Mobile Application - Frontend} | \href{https://github.com/koitran14/Gift-Shop-Mobile-Server}{\raisebox{-0.05\height}\faGithub\ Gift Shop Server - Backend}
+\end{tab}
+}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Programming} & Java, Python \\
+\textbf{Web Development} & HTML, CSS, JavaScript, ExpressJS, Node.js, ReactJS \\
+\textbf{Database} & MySQL, MongoDB \\
+\textbf{Version Control} & Git \\
+\textbf{Containerization} & Docker \\
+\end{tabularx}
+
+\vfill
+\end{document}
